@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/gouwuche.css"/>
+		<style type="text/css">
+				  *{
+				      margin: 0;
+				      padding: 0;
+				  }
+				 li{
+				     list-style: none;
+				 }
+				  .outer{
+				      height: 500px;
+				      width: 1000px;
+				      margin: 50px auto;
+				      position:relative;
+					  /* overflow: hidden; */
+					  padding-top: 50px;
+				  }
+				  .img{
+					   height: 300px;
+					  width: 1000px;
+					  margin: 50px auto;
+					  position:relative;
+					  overflow: hidden;
+				  }
+				  .img img{
+				     height: 300px;
+				    width: 240px;
+				  }
+				  .num{
+				      position: absolute;
+				      text-align: center;
+				      width: 100%;
+				      bottom: 20px;
+					  padding-bottom: 50px;
+				
+				  }
+				  .num li{
+				      display: inline-block;
+				      width: 20px;
+				      height: 20px;
+				      background-color: darkgray;
+				      color: white;
+				      text-align: center;
+				      line-height: 20px;
+				      border-radius: 50%;
+				      margin: 100px 20px 0 20px;
+					  
+				  }
+				  .btn{
+				      position: absolute;
+				      width: 20px;
+				      height: 50px;
+				      background-color: darkgray;
+				      color: white;
+				      text-align: center;
+				      line-height: 50px;
+				      top: 50%;
+				      margin-top: -25px;
+				      display: none;
+				  }
+				  .left_btn{
+				      left: 0;
+				  }
+				  .right_btn{
+				      right: 0;
+				  }
+				  .outer:hover .btn{
+				      display: inline-block;
+				      cursor: pointer;
+				  }
+				  .current{
+				      background-color: red!important;
+				  }
+		</style>
+	</head>
+	<body>
+		<div id="max">
+			<div id="color">
+				<div id="max_text">
+					<p>xx商城</p>
+				</div>
+				<div class="nav-text">
+					<p>当前位置--->我的购物车</p>
+				</div>
+				<div id="nav">
+					<ul>
+						<p>
+							<li><input type="checkbox" name="opo" id="" value="" class="allSelect" />全选</li>
+							<li>商品</li>
+						</p>
+						<span>
+							<li>单价</li>
+							<li>数量</li>
+							<li>小计</li>
+							<li>操作</li>
+						</span>
+					</ul>
+					<div id="money">
+						<div id="money_yrt">
+							<ul id="bordem">
+								<p>
+									<li><input type="checkbox" name="sd" id="" value=""  autocomplete="off"/></li>
+									<li><img src="img/timg.jpg"></li>
+								</p>
+								<span>
+									<li>2</li>
+									<li>
+										<button class="jian" type="button">-</button>
+												<input type="text" name="" id="nub" value="1" autocomplete="off"/>
+												<button class="jia" type="button">+</button>
+									</li>
+									<li id="mos">2</li>
+									<li class="shan">删除</li>
+								</span>
+							</ul>
+						</div>
+						<div id="vote_wit">
+							<ul id="bordem">
+								<p>
+									<li><input type="checkbox" name="sd" id="sd" value=""  autocomplete="off"/></li>
+									<li><img src="img/timg%20(2).jpg"></li>
+								</p>
+								<span>
+									<li>4</li>
+									<li>
+										<button class="jian" type="button">-</button>
+												<input type="text" name="" id="nub_hot" value="1" autocomplete="off" />
+												<button class="jia" type="button">+</button>
+									</li>
+									<li id="mos_hot">4</li>
+									<li class="shan">删除</li>
+								</span>
+							</ul>
+						</div>
+						<div id="hot_tix">
+							<ul id="bordem">
+								<p>
+									<li><input type="checkbox" name="sd" id="nub_hot" value=""  autocomplete="off"/></li>
+									<li><img src="img/timg%20(3).jpg"></li>
+								</p>
+								<span>
+									<li>2</li>
+									<li>
+										<button class="jian" type="button">-</button>
+												<input type="text" name="" id="nub_tix" value="1"  autocomplete="off"/>
+												<button class="jia" type="button">+</button>
+									</li>
+									<li id="mos_tix">2</li>
+									<li class="shan">删除</li>
+								</span>
+							</ul>
+						</div>
+						<div class="text">
+							<p id="quans">删除选中商品</p>
+						</div>
+						<div class="texts">
+							<strong>总共选中了<a class="shang">0</a>件商品 总记：<a id='way_money'>0</a></strong>
+							<button type="button" id="buts">去结算</button>
+						</div>
+		
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="kong">
+			
+		</div>
+		<div class="outer">
+		    <ul class="img">
+		        <li><a><img src="https://dawn.changxvan.top/Data/UploadFiles/adv/20170524/1495588800716222.jpg"></a>
+		        <a><img src="https://dawn.changxvan.top/Data/UploadFiles/adv/20170525/1495684434521009.jpg"></a>
+		        <a><img src="https://dawn.changxvan.top/Data/UploadFiles/adv/20170524/1495589027693993.jpg"></a>
+		        <a><img src="https://dawn.changxvan.top/Data/UploadFiles/adv/20170524/1495589261959572.jpg"></a></li>
+				 <li><a><img src="img/5a09563be37cc5823.jpg_d250.jpg"></a>
+				<a><img src="img/box2-mate30-porsche-cn.jpg"></a>
+				<a><img src="img/developer.jpg"></a>
+				<a><img src="img/hwc_free_test.png"></a></li>
+				 <li><a><img src="img/ia_100000040.jpg"></a>
+				<a><img src="img/ia_100000029.jpg"></a>
+				<a><img src="img/ia_100000036.jpg"></a>
+				<a><img src="img/ia_100000037.jpg"></a></li>
+				<li><a><img src="img/ia_100000035.jpg"></a>
+				<a><img src="img/ia_100001432.jpg"></a>
+				<a><img src="img/ia_100000038.jpg"></a>
+				<a><img src="img/ia_100000039.jpg"></a></li>
+		    </ul>
+		    <ul class="num">
+		        <li class="current">1</li>
+		        <li>2</li>
+		        <li>3</li>
+		        <li>4</li>
+		    </ul>
+		   <!-- <div class="left_btn btn"><</div>
+		    <div class="right_btn btn">></div> -->
+		</div>
+	</body>
+</html>
+<script src="js/gouwuche.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var att = [];
+	$.ajax({
+		url:'https://dawn.changxvan.top/api/',
+		async:true,
+		data:{
+			轮播图:focus
+		},
+		dataType:'JSON',
+		success:function(res){
+			var pic = res.focus
+			pic.forEach(function(val){
+				att.push(val.photo)
+			})
+			console.log(att)
+		},
+		error:(function () {
+			console.log('err')
+		})()
+	})
+var index=0;
+	$(".num li").mousemove(function () {
+	        $(this).addClass("current").siblings().removeClass("current");
+	        index=$(this).index();
+	        $(".img li").eq(index).stop().fadeIn(2000).siblings().stop().fadeOut(500);
+	});
+	// var time=setInterval(move,2000);
+	function move() {
+	    index++;
+	    if (index==4){
+	        index=0
+	    }
+	    $(".num li").eq(index).addClass("current").siblings().removeClass("current");
+	   $(".img li").eq(index).stop().fadeIn(2000).siblings().stop().fadeOut(500);
+	};
+	// $(".outer").hover(function () {
+	//     clearInterval(time);
+	// },
+	// function () {
+	//     time=setInterval(move,2000);
+	// });
+	// $(".right_btn").click(function () {
+	//    move();
+	// });
+	// function moveL() {
+	//      index--;
+	//     if (index==-1){
+	//         index=3
+	//     }
+	//     $(".num li").eq(index).addClass("current").siblings().removeClass("current");
+	//     $(".img li").eq(index).stop().fadeIn(2000).siblings().stop().fadeOut(500);
+	// }
+	// $(".left_btn").click(function () {
+	//     moveL();
+	// });
+</script>

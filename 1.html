@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/1.css"/>
+		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	</head>
+	<body>
+		<!-- 购物车开始 -->
+   <form class="buyCar">
+      <!-- 购物车上部开始 -->
+      <div class="top">
+         <div class="box1">
+            <input type="checkbox" class="allSelect" id="allSelect">
+            <label for="allSelect">全选</label>
+         </div>
+         <div class="box2">商品</div>
+         <div class="box3">单价</div>
+         <div class="box4">数量</div>
+         <div class="box5">小计</div>
+         <div class="box6">操作</div>
+      </div>
+      <div class="clear"></div>
+      <div class="top2"></div>
+      <!-- 购物车上部结束 -->
+      <!-- 购物车中部开始 -->
+      <div class="middle">
+         <div class="goods">
+            <div class="box11">
+               <input type="checkbox" class="check">
+               <a href="#"><img src="img/5a09563be37cc5823.jpg_d250.jpg" alt=""></a>
+            </div>
+            <div class="box12">
+               <span class="jingzao">京造</span>
+               <span>京造婴儿儿童理发器 宝宝剃头器 电推剪发器专业防水充电电动理发器 绿</span>
+            </div>
+            <div class="box13">
+               <span>颜色：绿色</span>
+            </div>
+            <div class="box14">
+               <div>&yen;<span>108.00</span></div>
+            </div>
+            <div class="box15">
+               <span class="minus">-</span>
+                    <span class="num">1</span>
+                    <span class="plus">+</span>
+            </div>
+            <div class="box16">
+               <div>&yen;<span class="subPrice" id="subPrice1">108.00</span></div>
+            </div>
+            <div class="box17">
+               <a href="#">删除</a>
+            </div>
+         </div>
+         <div class=" clear"></div>
+         <div class="goodsSpace"></div>
+         <div class="goods">
+            <div class="box11">
+               <input type="checkbox" class="check">
+               <a href="#"><img src="img/timg%20(4).jpg" alt=""></a>
+            </div>
+            <div class="box12">
+               <span class="shengxian">生鲜</span>
+               <span>海南妃子笑荔枝 1.5kg装 新鲜水果</span>
+            </div>
+            <div class="box13">
+               <span>颜色：海南妃子笑荔枝 1.5k...</span>
+            </div>
+            <div class="box14">
+               <div>&yen;<span id="price2">29.90</span></div>
+            </div>
+            <div class="box15">
+               <span class="minus">-</span>
+               <span class="num" id="num2">1</span>
+               <span class="plus">+</span>
+            </div>
+            <div class="box16">
+               <div>&yen;<span class="subPrice" id="subPrice2">29.90</span></div>
+            </div>
+            <div class="box17">
+               <a href="#">删除</a>
+            </div>
+         </div>
+      </div>
+      <!-- 购物车中部结束 -->
+      <!-- 购物车下部开始 -->
+      <div class="bottom">
+         <div class="left">
+            <input type="checkbox" class="">
+            <label for="allSelect">全选</label>
+            <a href="#">删除选中的商品</a>
+            <a href="#">移到我的关注</a>
+            <a href="#" class="clearCar">清理购物车</a>
+         </div>
+         <div class="right">
+            <div class="allPrice">
+               <div><span class="str">已选择<span class="fontColor1">0</span>件商品</span>总价：<span class="fontColor2">&yen;<span class="allPrice1" id="finalPrice">0.00</span></span></div>
+            </div>
+            <div class="balance">去结算</div>
+         </div>
+      </div>
+      <!-- 购物车下部结束 -->
+   </form>
+   <!-- 购物车结束 -->
+	</body>
+</html>
+<script src="js/1.js" type="text/javascript" charset="utf-8"></script>
